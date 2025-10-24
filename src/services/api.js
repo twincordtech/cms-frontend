@@ -11,7 +11,7 @@ const accessToken = localStorage.getItem('accessToken');
 
 // Set up axios instance with defaults
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: 'https://cms-backend-7fb2.onrender.com/api',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',

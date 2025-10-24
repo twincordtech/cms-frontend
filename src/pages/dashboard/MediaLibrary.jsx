@@ -61,22 +61,22 @@ const MediaLibrary = () => {
     // Handle malformed URLs like "uploadsmedia1752899497345-718978807.png"
     if (path.includes('uploadsmedia') && !path.includes('/uploads/media/')) {
       const filename = path.replace('uploadsmedia', '');
-      return `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/uploads/media/${filename}`;
+      return `https://cms-backend-7fb2.onrender.com/uploads/media/${filename}`;
     }
     
     // If it contains a full path with uploads/media, extract just the filename
     if (path.includes('/uploads/media/')) {
       const filename = path.split('/uploads/media/').pop();
-      return `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/uploads/media/${filename}`;
+      return `https://cms-backend-7fb2.onrender.com/uploads/media/${filename}`;
     }
     
     // For paths that might already be just filenames
     if (!path.includes('/')) {
-      return `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/uploads/media/${path}`;
+      return `https://cms-backend-7fb2.onrender.com/uploads/media/${path}`;
     }
     
     // Default case: extract the filename from the path and construct the URL
-    return `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/uploads/media/${path.split('/').pop()}`;
+    return `https://cms-backend-7fb2.onrender.com/uploads/media/${path.split('/').pop()}`;
   };
 
   useEffect(() => {

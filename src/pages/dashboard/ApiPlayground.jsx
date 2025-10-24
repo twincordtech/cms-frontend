@@ -334,7 +334,7 @@ const ApiPlayground = () => {
    */
   const handleEndpointChange = (e) => {
     let value = e.target.value;
-    const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+    const baseUrl = 'https://cms-backend-7fb2.onrender.com/api';
     if (value.startsWith(baseUrl)) {
       value = value.substring(baseUrl.length);
     }
@@ -395,7 +395,7 @@ const ApiPlayground = () => {
             </label>
             <div className="flex items-center">
               <span className="text-gray-500 bg-gray-50 px-3 py-2 border border-r-0 rounded-l-md">
-                {import.meta.env.VITE_API_URL || 'http://localhost:5000/api'}
+                https://cms-backend-7fb2.onrender.com/api
               </span>
               <input
                 id="api-endpoint-input"
