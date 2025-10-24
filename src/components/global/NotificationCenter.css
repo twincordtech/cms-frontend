@@ -1,0 +1,290 @@
+/* ===============================
+   File: NotificationCenter.css
+   Description: Styles for the notification center component including drawer, badges, and notification items.
+   Author: Tech4biz Solutions
+   Copyright: Tech4biz Solutions Private
+   =============================== */
+
+/* Ant Design notification customization */
+.ant-notification-notice {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Notification title styling */
+.notification-title {
+  font-weight: 600;
+  color: #1890ff;
+}
+
+/* Notification description spacing */
+.notification-description {
+  margin-top: 8px;
+}
+
+/* Notification action button spacing */
+.notification-button {
+  margin-top: 12px;
+}
+
+/* Notification icon styling */
+.notification-icon {
+  color: #52c41a;
+  font-size: 24px;
+}
+
+/* Notification badge positioning */
+.notification-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+/* Notification dropdown container */
+.notification-dropdown {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Notification list container */
+.notification-list-container {
+  padding: 8px 0;
+}
+
+/* Notification list with scroll */
+.notification-list {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+/* Individual notification item */
+.notification-item {
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+/* Notification item hover effect */
+.notification-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Unread notification styling */
+.notification-item.unread {
+  background-color: #e6f7ff;
+}
+
+/* Unread notification hover */
+.notification-item.unread:hover {
+  background-color: #bae7ff;
+}
+
+/* Notification message text */
+.notification-message {
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 4px;
+}
+
+/* Notification timestamp */
+.notification-time {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Notification actions section */
+.notification-actions {
+  border-top: 1px solid #f0f0f0;
+  padding: 8px 24px;
+}
+
+/* Loading state for notifications */
+.notification-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Notification badge wrapper */
+.notification-badge-wrapper {
+  margin-right: 16px;
+}
+
+/* Notification bell button */
+.notification-bell-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+/* Notification bell button hover */
+.notification-bell-button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Notification drawer header */
+.notification-drawer .ant-drawer-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Notification header layout */
+.notification-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Notification title in header */
+.notification-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Notification count badge */
+.notification-count-badge {
+  margin-left: auto;
+}
+
+/* Loading state in drawer */
+.notification-loading {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+/* Empty state styling */
+.notification-empty {
+  margin: 32px 0;
+}
+
+/* Notification list in drawer */
+.notification-list {
+  margin-top: 8px;
+}
+
+/* Individual notification item in drawer */
+.notification-item {
+  padding: 16px !important;
+  transition: all 0.3s !important;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+/* Notification item hover in drawer */
+.notification-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Unread notification in drawer */
+.notification-item.unread {
+  background-color: #e6f7ff;
+}
+
+/* Notification item header layout */
+.notification-item-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Notification type indicator dot */
+.notification-type-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Notification content styling */
+.notification-content {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Notification message in content */
+.notification-message {
+  margin-bottom: 4px;
+}
+
+/* Notification company info */
+.notification-company {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.45);
+  margin: 4px 0;
+}
+
+/* Notification timestamp with icon */
+.notification-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 8px;
+}
+
+/* Time icon styling */
+.time-icon {
+  font-size: 12px;
+}
+
+/* Read button styling */
+.read-button {
+  color: #52c41a !important;
+}
+
+/* Read button hover */
+.read-button:hover {
+  color: #389e0d !important;
+  background-color: #f6ffed !important;
+}
+
+/* Delete button hover */
+.delete-button:hover {
+  background-color: #fff1f0 !important;
+}
+
+/* Mark all read button */
+.mark-all-read-button {
+  font-size: 13px;
+  height: 32px;
+  padding: 0 12px;
+}
+
+/* Custom notification popup styling */
+.custom-notification {
+  width: 380px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom notification message */
+.custom-notification .ant-notification-notice-message {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Custom notification description */
+.custom-notification .ant-notification-notice-description {
+  font-size: 14px;
+}
+
+/* Custom notification hover */
+.custom-notification:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+/* ===============================
+   End of File: NotificationCenter.css
+   Description: Notification center styles
+   Author: Tech4biz Solutions
+   Copyright: Tech4biz Solutions Private
+   =============================== */ 
