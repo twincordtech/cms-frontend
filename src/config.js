@@ -16,7 +16,7 @@
  * @type {{ BASE_URL: string, TIMEOUT: number }}
  */
 export const API_CONFIG = {
-  BASE_URL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  BASE_URL: 'https://cms-backend-7fb2.onrender.com/api',
   TIMEOUT: 30000, // 30 seconds
 };
 
@@ -24,7 +24,7 @@ export const API_CONFIG = {
  * Base URL for the application
  * @type {string}
  */
-export const BASE_URL = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000';
+export const BASE_URL = 'https://cms-backend-7fb2.onrender.com';
 
 /**
  * Feature flags for enabling/disabling features
